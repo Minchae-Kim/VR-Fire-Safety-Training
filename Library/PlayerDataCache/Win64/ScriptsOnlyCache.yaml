@@ -2,10 +2,15 @@ ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
     - FireExtinguisherInteractions
+    - FireHP
+    - GameManager
     - Hand
     - HandController
     - OnAnimation_door
     - Teleport_door
+    - TimeControl
+    - check_clear
+    - effect_interaction
     - onClick_fireExtinguisher
     Unity.InputSystem.dll:
     - UnityEngine.InputSystem.InputActionAsset
@@ -25,6 +30,7 @@ ScriptsOnlyBuild:
     - UnityEngine.XR.Interaction.Toolkit.LocomotionSystem
     - UnityEngine.XR.Interaction.Toolkit.TeleportationProvider
     - UnityEngine.XR.Interaction.Toolkit.UI.TrackedDeviceGraphicRaycaster
+    - UnityEngine.XR.Interaction.Toolkit.UI.XRUIInputModule
     - UnityEngine.XR.Interaction.Toolkit.XRGrabInteractable
     - UnityEngine.XR.Interaction.Toolkit.XRInteractionManager
     - UnityEngine.XR.Interaction.Toolkit.XRInteractorLineVisual
@@ -51,13 +57,15 @@ ScriptsOnlyBuild:
     UnityEngine.SpatialTracking.dll:
     - UnityEngine.SpatialTracking.TrackedPoseDriver
     UnityEngine.UI.dll:
+    - UnityEngine.EventSystems.EventSystem
     - UnityEngine.UI.Button
     - UnityEngine.UI.CanvasScaler
     - UnityEngine.UI.GraphicRaycaster
     - UnityEngine.UI.Image
+    - UnityEngine.UI.Outline
     - UnityEngine.UI.Text
   sceneClasses:
-    Assets/KwonEunji/Scenes/Sample_1.unity:
+    Assets/Scenes/main_1.unity:
     - Class: 1
       Script: {instanceID: 0}
     - Class: 4
@@ -115,6 +123,8 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11872}
     - Class: 114
+      Script: {instanceID: 11898}
+    - Class: 114
       Script: {instanceID: 11974}
     - Class: 114
       Script: {instanceID: 12248}
@@ -123,9 +133,17 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 12708}
     - Class: 114
+      Script: {instanceID: 12768}
+    - Class: 114
+      Script: {instanceID: 12858}
+    - Class: 114
+      Script: {instanceID: 12910}
+    - Class: 114
       Script: {instanceID: 13018}
     - Class: 114
       Script: {instanceID: 13390}
+    - Class: 114
+      Script: {instanceID: 13836}
     - Class: 114
       Script: {instanceID: 13914}
     - Class: 114
@@ -147,6 +165,8 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 14766}
     - Class: 114
+      Script: {instanceID: 14824}
+    - Class: 114
       Script: {instanceID: 14890}
     - Class: 114
       Script: {instanceID: 14942}
@@ -155,11 +175,17 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 15442}
     - Class: 114
+      Script: {instanceID: 15450}
+    - Class: 114
+      Script: {instanceID: 15492}
+    - Class: 114
       Script: {instanceID: 15568}
     - Class: 114
       Script: {instanceID: 15712}
     - Class: 114
       Script: {instanceID: 15732}
+    - Class: 114
+      Script: {instanceID: 18140}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 120
@@ -176,6 +202,10 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 196
       Script: {instanceID: 0}
+    - Class: 198
+      Script: {instanceID: 0}
+    - Class: 199
+      Script: {instanceID: 0}
     - Class: 213
       Script: {instanceID: 0}
     - Class: 222
@@ -183,6 +213,10 @@ ScriptsOnlyBuild:
     - Class: 223
       Script: {instanceID: 0}
     - Class: 224
+      Script: {instanceID: 0}
+    - Class: 19719996
+      Script: {instanceID: 0}
+    - Class: 1839735485
       Script: {instanceID: 0}
   scriptHashData:
   - hash:
@@ -1009,7 +1043,7 @@ ScriptsOnlyBuild:
     className: BeforeAfterTestCommandState
   - hash:
       serializedVersion: 2
-      Hash: c99297002e805e1d725db860ac654e7b
+      Hash: c5ec38bad504fec6bbc952f94a3ab89b
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: GameManager
@@ -1237,5 +1271,5 @@ ScriptsOnlyBuild:
     className: SlideScript
   platform: 19
   scenePathNames:
-  - Assets/KwonEunji/Scenes/Sample_1.unity
+  - Assets/Scenes/main_1.unity
   playerPath: C:/Users/User/Unity/Fire Safety Education/Fire Safety Education.exe
